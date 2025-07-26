@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Swift Travels</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="choose_trip.html">Choose Trip</a></li>
+                <li><a href="track_bus.html">Track Bus</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Payment</h2>
+            <form id="paymentForm">
+                <label for="payment_method">Payment Method:</label>
+                <select id="payment_method" name="payment_method" required>
+                    <option value="visa">Pay by Visa</option>
+                    <option value="on_site">Pay on Site</option>
+                </select>
+                <br>
+                <button type="submit">Proceed to Payment</button>
+            </form>
+            <button onclick="cancelBooking()">Cancel Booking</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Swift Travels</p>
+    </footer>
+    <script>
+        function cancelBooking() {
+            if (confirm('Are you sure you want to cancel this booking?')) {
+                window.location.href = 'cancel_success.html';
+            }
+        }
+    </script>
+</body>
+</html>

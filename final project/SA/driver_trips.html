@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Trips - Swift Travels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Swift Travels</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="driver_trips.html">Driver Trips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Driver Trips</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip ID</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>500478</td>
+                        <td>Cairo</td>
+                        <td>Alexandria</td>
+                        <td>Monday</td>
+                        <td>10:00 AM</td>
+                        <td>
+                            <button onclick="startTrip(1)">Start Trip</button>
+                            <button onclick="endTrip(1)">End Trip</button>
+                        </td>
+                    </tr>
+                    <!-- Add more trips as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Swift Travels</p>
+    </footer>
+    <script>
+        function startTrip(tripId) {
+            alert('Trip ' + tripId + ' started.');
+        }
+
+        function endTrip(tripId) {
+            alert('Trip ' + tripId + ' ended.');
+        }
+    </script>
+</body>
+</html>
